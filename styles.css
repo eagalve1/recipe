@@ -1,0 +1,303 @@
+/* -------------------- CSS BY NAME -------------------------------------- */
+
+.hidden {
+    visibility: hidden;
+    display: none;
+}
+
+.streetTaco img {
+    width: 100%;
+    object-fit: contain;
+}
+
+.logo {
+    background-color: #EB5428;
+    text-align: center;
+    display: block;
+    width: 50%;
+    margin: auto;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+
+.menu {
+    display: none;
+    color:#0D0D0D;
+    margin: 0;
+}
+
+.signUp {
+    font-family: "Bebas Neue", serif;
+    font-size: 20px;
+}
+
+.search {
+    text-align: center;
+}
+
+.search input {
+    border: 2px solid #EB5428;
+    position: relative;
+    left: 5px;
+    bottom: 14.5px;
+    height: 34px;
+}
+
+.search svg {
+    background-color: #EB5428;
+}
+
+.social {
+    color: #EB5428;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    justify-items: center;
+    text-align: center;
+    margin: 0;
+}
+
+.social h3 {
+    margin: 0;
+}
+
+.list li {
+    list-style: square;
+}
+/* -------------------- IMPORTED FONTS -------------------------------------- */
+.bebas-neue-regular {
+    font-family: "Bebas Neue", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+ .montserrat-unique {
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+/*-------------------- CSS REST ---------------------------------------------------*/
+h1, h2 {
+    text-align: center;
+
+}
+
+h1 {
+    font-family: "Bebas Neue", serif;
+    font-size: 40px;
+}
+
+h2 {
+    font-family: "Bebas Neue", serif;
+    font-size: 30px;
+    padding: 0;
+}
+
+h3 {
+    font-family: "Bebas Neue", serif;
+    font-size: 25px;
+}
+
+#social li, footer, menu li, nav li, nav a {
+    font-family: "Bebas Neue", serif;
+    font-size: 20px;
+}
+
+p, dd, li, nav, input {
+    font-family: "Montserrat", serif;
+    font-size: 16px;
+}
+
+p {
+    padding: 10px;
+}
+
+a {
+    color: #0D0D0D;
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+    padding: 0;
+    margin: 10px;
+}
+
+ul {
+    padding: 20px;
+}
+
+dt {
+    font-family: "Montserrat", serif;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+dl {
+    margin: 0;
+}
+
+/* original code */
+
+header {
+    background-color: #F2F2F2;
+}
+
+header h1 {
+    margin: 0;
+    padding: 20px;
+}
+
+main {
+    background-color: #F2F2F2;
+}
+
+menu {
+    background-color: #F2F2F2;
+    padding: 0px;
+    margin: 0px;
+    width: 24%;
+    position: absolute;
+    top: 21px;
+    text-align: center;
+}
+
+menu li {
+    margin: 0;
+}
+
+nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: center;
+    text-align: center;
+}
+
+aside {
+    background-color: #7ABFBF;
+}
+
+aside section {
+    padding: 10px;
+}
+
+aside h3 {
+    margin-top: 0;
+    margin-left: 100px;
+
+}
+
+aside p {
+    padding: 0;
+    margin: 0;
+}
+
+aside img {
+    float: left;
+    width: 15%;
+}
+
+footer {
+    background-color: #F2F2F2;
+    text-align: center;
+    display: grid;
+    margin: 0;
+}
+footer img {
+    width: 30%;
+    display: block;
+    margin: auto;
+    padding: 20px;
+}
+
+/* -------------------- ROOT VARIABLES --------------------------------------- */
+body {
+    background-color: rgba(122, 191, 191, .5);
+}
+
+BLACK: #0D0D0D
+WHITE: #F2F2F2
+TEAL: #7ABFBF
+BABY BLUE: rgba(122, 191, 191, .5)
+RED: #EB5428
+
+/* --------------------GLOBAL STYLES (mobile first/small) --------------------*/
+@media screen and (min-width: 414px) {
+nav {
+    grid-area: nav;
+    min-width: 414px;
+    background-color: #ffffff;
+    box-shadow: 0px 3px 3px #bbb;
+    position: fixed;
+    top: 0;
+    z-index: 5;
+}
+nav ul {
+    grid-area: hamberger;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    overflow: hidden;
+    max-height: 0;
+}
+nav li img {
+    display: none;
+}
+nav li a {
+    display: block;
+    padding: 20px;
+    text-decoration: none;
+}
+nav label {
+    cursor: pointer;
+    display: inline-block;
+    user-select: none;
+    position: relative;
+    bottom: 5px;
+    left: 30px;
+}
+nav span {
+    display: block;
+    position: relative;
+ }
+nav label svg {
+    display: block;
+}
+label span:before, label span:after {
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+}
+nav input {
+    display: none;
+}
+nav input:checked ~ ul {
+    max-height: 550px;
+}
+nav h2 {
+    visibility: hidden;
+    height: 1px;
+    width: 1px;
+}
+    
+}
+
+/*-------------------- MEDIA QUERY (medium) --------------------------------*/
+@media screen and (min-width: 768px) {
+
+    
+}
+
+/*-------------------- MEDIA QUERY (large) ------------------------------------*/
+@media screen and (min-width: 1280px) {
+
+    
+}
+
+/*-------------------- MEDIA QUERY (xl) ---------------------------------------*/
+
